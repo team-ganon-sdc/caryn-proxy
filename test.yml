@@ -1,0 +1,15 @@
+config:
+  target: "http://localhost:3000"
+  phases:
+    - duration: 10
+      arrivalRate: 1
+  variables:
+    id:
+      - "1"
+      - "1000"
+      - "100000"
+      - "10000000"
+scenarios:
+  - flow:
+    - get:
+        url: "/?={{ id }}"
