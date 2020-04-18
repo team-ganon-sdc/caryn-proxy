@@ -9,8 +9,8 @@ const axios = require('axios');
 // app.use(express.static('public'))
 app.use(express.static(path.join(__dirname, '/../public')));
 
-app.get('/loaderio-536aa6f241c3ba0c9409d4050ec8e10f.txt', (req, res) => {
-  res.sendFile(path.join(__dirname, '../loaderio-536aa6f241c3ba0c9409d4050ec8e10f.txt'));
+app.get('loaderio-2e520f5da32d6bc70b878d37036247dc.txt', (req, res) => {
+  res.sendFile(path.join(__dirname, '../loaderio-2e520f5da32d6bc70b878d37036247dc.txt'));
 });
 
 app.post('/carousels', (req, res) => {
