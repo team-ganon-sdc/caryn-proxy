@@ -9,7 +9,7 @@ const axios = require('axios');
 // app.use(express.static('public'))
 app.use(express.static(path.join(__dirname, '/../public')));
 
-app.get('loaderio-2e520f5da32d6bc70b878d37036247dc.txt', (req, res) => {
+app.get('/loaderio-2e520f5da32d6bc70b878d37036247dc.txt', (req, res) => {
   res.sendFile(path.join(__dirname, '../loaderio-2e520f5da32d6bc70b878d37036247dc.txt'));
 });
 
