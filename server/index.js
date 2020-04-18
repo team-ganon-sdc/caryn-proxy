@@ -2,7 +2,7 @@ require('newrelic');
 const express = require('express');
 const path = require('path');
 const app = express();
-const port = 3000;
+const port = 8080;
 
 const axios = require('axios');
 
@@ -19,4 +19,4 @@ app.post('/carousels', (req, res) => {
   .catch(err => res.json(err));
 });
 
-app.listen(port, () => console.log(`Proxy server running on port ${port}!`));
+app.listen(port, '172.31.19.218');
